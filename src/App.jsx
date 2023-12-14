@@ -7,8 +7,8 @@ function App() {
   return (
     <div className="flex justify-center">
       <div className="w-1044 bg-white p-8 shadow">
-        <div className="flex">
-          <div className="w-2/5">
+        <div className="flex flex-col sm:flex-row">
+          <div className="w-full sm:w-2/5">
             <div className="mb-4 px-5 py-2 bg-red-400 bg-opacity-20">
               <div className="flex justify-center items-center">
                 <img
@@ -18,10 +18,14 @@ function App() {
                   style={{ objectFit: "cover" }}
                 />
               </div>
+              <h2 className="text-2xl font-bold mb-2 text-left uppercase block sm:hidden">
+                Tsar Alexey Alexandrovich
+              </h2>
               <h2 className="text-lg font-bold mb-2 flex justify-end items-center uppercase">
                 About Me
                 <div className="flex-grow h-0.5 ml-4 bg-gray-300"></div>
               </h2>
+
               <p className="text-gray-600 text-left px-5 text-gray-600 ">
                 My name is Alexey. I'm looking for Frontend developer positions
                 in both website and UX/UI design, and I'll be using the
@@ -75,24 +79,22 @@ function App() {
                 </ul>
               </div>
             </div>
-            <a href="/public/CV.pdf" download>
-              <button className="bg-gray-500 hover:bg-gray-700 text-white  font-bold py-2 px-4  mt-5 rounded">
+            <a href="/CV.pdf" download>
+              <button className="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 mt-5 rounded hidden sm:block">
                 Download CV
               </button>
             </a>
           </div>
 
-          <div className="w-3/5">
-            <div className="mb-4 px-5 py-2">
-              <h2 className="text-4xl font-bold mb-2 text-left uppercase">
+          <div className="w-full sm:w-3/5">
+            <div className="mb-4 px-5 py-2 ">
+              <h2 className="text-4xl font-bold mb-2 text-left uppercase  hidden sm:block">
                 Tsar Alexey Alexandrovich
               </h2>
-              <div className="text-left mt-3">
-                <p className="text-lg mb-2 uppercase">
-                  <span className="bg-red-400 bg-opacity-50 px-4 py-2 text-white ">
-                    Frontend Developer
-                  </span>
-                </p>
+              <div className="text-left mt-3 hidden sm:block">
+                <span className="bg-red-400 bg-opacity-50 text-lg mb-2 uppercase px-4 py-2 text-white ">
+                  Frontend Developer
+                </span>
               </div>
 
               <h2 className="text-lg font-bold mb-2 mt-6 flex justify-end items-center">
@@ -176,7 +178,7 @@ function App() {
                 <h3 className="text-lg  text-left text-gray-400">
                   November, 2023
                 </h3>
-                <div className="">
+                <div>
                   <h4 className="text-lg font-bold text-left text-gray-800">
                     Lamoda
                   </h4>
@@ -249,6 +251,13 @@ function App() {
                   </div>
                 </div>
               </div>
+            </div>
+            <div className="flex justify-center block sm:hidden">
+              <a href="/CV.pdf" download>
+                <button className="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 mt-8 rounded flex items-center">
+                  Download CV
+                </button>
+              </a>
             </div>
           </div>
         </div>
