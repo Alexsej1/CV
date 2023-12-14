@@ -1,5 +1,6 @@
 import { useState } from "react";
 import reactLogo from "./assets/react.svg";
+import Project from "../src/components/Project";
 import viteLogo from "/vite.svg";
 import "./App.css";
 
@@ -138,119 +139,36 @@ function App() {
                 <span className="px-2 text-xl uppercase">Projects</span>
                 <div className="flex-grow h-0.5 ml-4 bg-gray-300"></div>
               </h2>
-              <div className="mb-4 px-5 py-2 bg-gray-200 bg-opacity-40 rounded-md">
-                <h3 className="text-lg  text-left text-gray-400">
-                  October, 2023
-                </h3>
-                <div className="">
-                  <h4 className="text-lg font-bold text-left text-gray-800">
-                    Sortable TodoList
-                  </h4>
-                  <p className="text-left ">
-                    <span className="inline-block bg-gray-300 text-gray-600 px-2 py-1 rounded-md mr-2">
-                      HTML
-                    </span>
-                    <span className="inline-block bg-gray-300 text-gray-600 px-2 py-1 rounded-md mr-2">
-                      ReactJS
-                    </span>
-                    <span className="inline-block bg-gray-300 text-gray-600 px-2 py-1 rounded-md mr-2">
-                      Module CSS
-                    </span>
-                  </p>
-                  <p className="text-gray-600 text-left">
-                    SortedTodoList is a versatile task management application
-                    that offers users the ability to create, track, and sort
-                    their to-do lists.
-                  </p>
 
-                  <div className="text-left ">
-                    <a
-                      href="https://github.com/Alexsej1/TodoList"
-                      target="_blank"
-                      className="text-blue-500 hover:underline "
-                    >
-                      Link to GitHub
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="mb-4 px-5 py-2 bg-gray-200 bg-opacity-40 rounded-md">
-                <h3 className="text-lg  text-left text-gray-400">
-                  November, 2023
-                </h3>
-                <div>
-                  <h4 className="text-lg font-bold text-left text-gray-800">
-                    Lamoda
-                  </h4>
-                  <p className="text-left ">
-                    <span className="inline-block bg-gray-300 text-gray-600 px-2 py-1 rounded-md mr-2">
-                      HTML
-                    </span>
-                    <span className="inline-block bg-gray-300 text-gray-600 px-2 py-1 rounded-md mr-2">
-                      ReactJS
-                    </span>
-                    <span className="inline-block bg-gray-300 text-gray-600 px-2 py-1 rounded-md mr-2">
-                      Material UI
-                    </span>
-                  </p>
-                  <p className="text-gray-600 text-left">
-                    Lamoda is a project that encompasses a website offering a
-                    diverse range of fashion and accessory products. It provides
-                    convenient sorting options and efficient database management
-                    for handling product information.
-                  </p>
-
-                  <div className="text-left ">
-                    <a
-                      href="https://github.com/Alexsej1/Lamoda"
-                      target="_blank"
-                      className="text-blue-500 hover:underline "
-                    >
-                      Link to GitHub
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="mb-4 px-5 py-2 bg-gray-200 bg-opacity-40 rounded-md">
-                <h3 className="text-lg  text-left text-gray-400">
-                  December, 2023
-                </h3>
-                <div className="">
-                  <h4 className="text-lg font-bold text-left text-gray-800">
-                    Notion
-                  </h4>
-                  <p className="text-left ">
-                    <span className="inline-block bg-gray-300 text-gray-600 px-2 py-1 rounded-md mr-2">
-                      HTML
-                    </span>
-                    <span className="inline-block bg-gray-300 text-gray-600 px-2 py-1 rounded-md mr-2">
-                      ReactJS
-                    </span>
-                    <span className="inline-block bg-gray-300 text-gray-600 px-2 py-1 rounded-md mr-2">
-                      Redux
-                    </span>
-                    <span className="inline-block bg-gray-300 text-gray-600 px-2 py-1 rounded-md mr-2">
-                      Tailwind
-                    </span>
-                  </p>
-                  <p className="text-gray-600 text-left">
-                    Notion is a website that allows users to register, log in,
-                    and create, delete, or edit notes. It provides a
-                    user-friendly interface for efficient note-taking and
-                    organization.
-                  </p>
-
-                  <div className="text-left ">
-                    <a
-                      href="https://github.com/Alexsej1/Notes"
-                      target="_blank"
-                      className="text-blue-500 hover:underline "
-                    >
-                      Link to GitHub
-                    </a>
-                  </div>
-                </div>
-              </div>
+              <Project
+                title="Sortable TodoList"
+                date="October, 2023"
+                tags={["HTML", "ReactJS", "Module CSS"]}
+                description="SortedTodoList is a versatile task management application
+                that offers users the ability to create, track, and sort
+                their to-do lists."
+                link="https://github.com/Alexsej1/TodoList"
+              />
+              <Project
+                title="Lamoda"
+                date=" November, 2023"
+                tags={["HTML", "ReactJS", "Material UI"]}
+                description=" Lamoda is a project that encompasses a website offering a
+                diverse range of fashion and accessory products. It provides
+                convenient sorting options and efficient database management
+                for handling product information."
+                link="https://github.com/Alexsej1/Lamoda"
+              />
+              <Project
+                title="Notion"
+                date="  December, 2023"
+                tags={["HTML", "ReactJS", "Redux", "Tailwind"]}
+                description="Notion is a website that allows users to register, log in,
+                and create, delete, or edit notes. It provides a
+                user-friendly interface for efficient note-taking and
+                organization."
+                link="https://github.com/Alexsej1/Notes"
+              />
             </div>
             <div className="flex justify-center block sm:hidden">
               <a href="/CV.pdf" download>
