@@ -75,7 +75,7 @@ function App() {
                 </ul>
               </div>
             </div>
-            <a href="public/CV.pdf" download>
+            <a href="/public/CV.pdf" download>
               <button className="bg-gray-500 hover:bg-gray-700 text-white  font-bold py-2 px-4  mt-5 rounded">
                 Download CV
               </button>
