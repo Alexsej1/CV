@@ -167,7 +167,7 @@ function App() {
                 and create, delete, or edit notes. It provides a
                 user-friendly interface for efficient note-taking and
                 organization."
-                link="https://github.com/Alexsej1/Notes"
+                link="https://github.com/Alexsej1/NotionRedux"
               />
             </div>
             <div className="flex justify-center block sm:hidden">
